@@ -17,7 +17,7 @@ This repository contains the official PyTorch implementation for the DELTA model
 └── utils/
     └── random_seed.py          # Deterministic seed settings
 
-# requirements
+# Requirements
 This code was tested on Python 3.12.12 with pytorch '2.3.1 '.
 
 # Data Preparation (Due to Privacy Restrictions)
