@@ -2,7 +2,7 @@
 
 This repository contains the official PyTorch implementation for the DELTA model, a Transformer-based deep learning framework designed to predict incident Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD) using sliding-window Heart Rate Variability (HRV) features extracted from exercise electrocardiogram (ECG) data.
 
-## Repository Structure
+# Repository Structure
 
 ```text
 .
@@ -17,10 +17,10 @@ This repository contains the official PyTorch implementation for the DELTA model
 └── utils/
     └── random_seed.py          # Deterministic seed settings
 
-## requirements
+# requirements
 This code was tested on Python 3.12.12 with pytorch '2.3.1 '.
 
-## Data Preparation (Due to Privacy Restrictions)
+# Data Preparation (Due to Privacy Restrictions)
 
 Due to the strict data usage agreements of the UK Biobank and patient privacy regulations, the raw ECG XML files and clinical labels cannot be shared publicly. To reproduce the pipeline or train on your own cohort, please structure your local data/ directory as follows:
 
@@ -34,11 +34,9 @@ data/
     └── MASLD/
 Note: The preprocessing script (data_preprocess.py) is designed to automatically extract the target ECG lead, calculate sliding-window HRV indices matching HRV_indices.csv, and handle missing values.
 
-## How to Run
+# How to Run
 Step 1: Feature Extraction
 Run the preprocessing script to clean the signals, extract R-peaks, and compute the sliding-window HRV features.
-
-Bash
 
 python data_preprocess.py
 This will generate Processed_HRV_Lead2.csv in the output directory.
@@ -46,11 +44,9 @@ This will generate Processed_HRV_Lead2.csv in the output directory.
 Step 2: Train the DELTA Model
 Once the feature extraction is complete, you can train the model. Hyperparameters can be adjusted directly in config.py.
 
-Bash
-
 python train.py
 
-## Outputs
+# Outputs
 Upon completion, the script will automatically generate and save the following in the ./results/ folder:
 
 result_plot.png: Training loss curve and testing confusion matrix.
