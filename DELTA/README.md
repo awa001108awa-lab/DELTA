@@ -20,7 +20,7 @@ This repository contains the official PyTorch implementation for the DELTA model
 # Requirements
 This code was tested on Python 3.12.12 with pytorch '2.3.1 '.
 
-## Data Preparation (Due to Privacy Restrictions)
+# Data Preparation (Due to Privacy Restrictions)
 
 Due to the strict data usage agreements of the UK Biobank and patient privacy regulations, the raw ECG XML files and clinical labels cannot be shared publicly. To reproduce the pipeline or train on your own cohort, please structure your local data/ directory as follows:
 
